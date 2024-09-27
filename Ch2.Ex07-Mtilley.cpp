@@ -1,19 +1,24 @@
-// Ch2.Ex18-Mtilley.cpp 
+// Ch2.Ex07-Mtilley.cpp 
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    const double MIL_PER_YEAR = 1.5;
+	int num;
 
-    cout << endl;
-    cout << "The ocean's level will increase " << MIL_PER_YEAR * 5;
-    cout << " millimeters after 5 years. " << endl;
-    cout << "The ocean's level will rise " << MIL_PER_YEAR * 7;
-    cout << " millimeters after 7 years. " << endl;
-    cout << "The ocean's level will rise " << MIL_PER_YEAR * 10;
-    cout << " millimeter after 10 years." << endl;
-    cout << endl;
+    double risePerYear; 
+
+    std::cout << "Enter the ocean level rise per year in mm: ";
+    std::cin >> risePerYear;
+
+    double riseIn5Years = risePerYear * 5;
+    double riseIn7Years = risePerYear * 7;
+    double riseIn10Years = risePerYear * 10;
+
+    std::cout << "In 5 years, the ocean level will rise by " << riseIn5Years << " mm." << std::endl;
+    std::cout << "In 7 years, the ocean level will rise by " << riseIn7Years << " mm." << std::endl;
+    std::cout << "In 10 years, the ocean level will rise by " << riseIn10Years << " mm." << std::endl;
+
+    return 0;
 }
-
